@@ -27,7 +27,7 @@ const server = app.listen(PORT, () => {
 
 const io = socket(server, {
     cors: {
-        origin: ['http://localhost:5173', 'https://zooome.web.app'],
+        origin: ['http://localhost:5173', 'https://mba-calling.netlify.app'],
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
     },
     maxHttpBufferSize: 2 * 1024 * 1024 * 1024 // 2GB limit
